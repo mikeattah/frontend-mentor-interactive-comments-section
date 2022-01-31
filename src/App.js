@@ -1,24 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import { nanoid } from "nanoid";
+import Comments from "./components/Comments";
+import Update from "./components/Update";
+
+import data from "./assets/data.json";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main className="App">
+      {data.comments.map((comment) => {
+        return (
+          <Comments
+            key={nanoid()}
+            content={comment.content}
+            createdAt={comment.createdAt}
+            score={comment.score}
+            avatar={comment.user.image.png}
+            username={comment.user.username}
+            replies={comment.replies}
+          />
+        );
+      })}
+    </main>
   );
 }
 
