@@ -1,4 +1,4 @@
-import logo from "./logo.svg";
+ import logo from "./logo.svg";
 import "./App.css";
 import { nanoid } from "nanoid";
 import Comments from "./components/Comments";
