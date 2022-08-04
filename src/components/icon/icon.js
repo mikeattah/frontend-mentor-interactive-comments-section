@@ -1,6 +1,7 @@
 import React from "react";
+import "./icon.css";
 
-function ReplyIcon(props) {
+function Icon(props) {
   return (
     <button>
       <i></i>Reply
@@ -8,4 +9,4 @@ function ReplyIcon(props) {
   );
 }
 
-export default ReplyIcon;
+export default Icon;

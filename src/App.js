@@ -1,29 +1,41 @@
- import logo from "./logo.svg";
+import logo from "./logo.svg";
 import "./App.css";
 import { nanoid } from "nanoid";
-import Comments from "./components/Comments";
-import Update from "./components/Update";
+import Comment from "./components/comment/comment";
+import Post from "./components/post/post";
+import Reply from "./components/reply/reply";
+import Update from "./components/update/update";
 
-import data from "./assets/data.json";
+import data from "./assets/data/data.json";
 
 function App() {
+  const {
+    currentUser: {
+      image: { png, webp },
+      username,
+    },
+    comments,
+  } = data;
   return (
     <main className="App">
-      {data.comments.map((comment) => {
+      {comments.map((comment) => {
+        const { id, content, createdAt, score, user, replies } = comment;
         return (
-          <Comments
+          <Comment
             key={nanoid()}
-            content={comment.content}
-            createdAt={comment.createdAt}
-            score={comment.score}
-            avatar={comment.user.image.png}
-            username={comment.user.username}
-            replies={comment.replies}
+            id={id}
+            content={content}
+            createdAt={createdAt}
+            score={score}
+            user={user}
+            replies={replies}
           />
         );
       })}
+      <Post />
     </main>
   );
 }
 
 export default App;
+

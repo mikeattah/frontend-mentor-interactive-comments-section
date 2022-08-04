@@ -1,4 +1,4 @@
-# Frontend Mentor - Interactive comments section solution
+# Frontend Mentor - Interactive Comments Section Solution
 
 This is a solution to the [Interactive comments section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-comments-section-iG1RugEG9). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
@@ -47,14 +47,11 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### Built with
 
-- NPM
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
-- Mobile-first workflow?
-- [React.js](https://reactjs.org/) - JS library
-- [Styled Components](https://styled-components.com/) - For styles
+- [NPM](https://www.npmjs.com/)
+- [HTML5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5)
+- [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3)
+- [React.js](https://reactjs.org/)
+- [Styled Components](https://styled-components.com/)
 
 ### What I learned
 
@@ -95,6 +92,8 @@ Use this section to outline areas that you want to continue focusing on in futur
 - Frontend Mentor - [@mikeattah](https://www.frontendmentor.io/profile/mikeattah)
 - Twitter - [@mikeattahh](https://www.twitter.com/mikeattahh)
 
-## Acknowledgments
+## Credit
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
+This is a solution to the [Interactive comments section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-comments-section-iG1RugEG9). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+
+This site is hosted on [GitHub Pages](https://pages.github.com/).

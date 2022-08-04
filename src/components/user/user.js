@@ -1,6 +1,6 @@
 import React from "react";
-import Avatar from "./Avatar";
-import UserDetails from "./UserDetails";
+import Avatar from "../avatar/avatar";
+import UserDetails from "../UserDetails";
 
 function User({ ...props }) {
   return (
